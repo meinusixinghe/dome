@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/EftDemo">
+        <file>image/add.png</file>
+        <file>image/delete.png</file>
+    </qresource>
+</RCC>
