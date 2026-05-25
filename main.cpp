@@ -1,15 +1,13 @@
-﻿#include "EftDemo.h"
-#include "stdafx.h"
-#include <QtWidgets/QApplication>
-#include "testtwocontroller.h"
+#include "mainwindow.h"
+#include <QApplication>
+#include <QNetworkProxy>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    EftDemo w;
+    QNetworkProxy::setApplicationProxy(QNetworkProxy::NoProxy);
+    MainWindow w;
+    w.setWindowTitle("激光切割");
     w.show();
-    // TestTwoController ttc;
-    // ttc.main();
-
     return a.exec();
 }
